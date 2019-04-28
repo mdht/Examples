@@ -4,10 +4,10 @@
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
- * 
+ *
  * Contributors:
  *     Sean Muir - initial API and implementation
- *     
+ *
  * $Id$
  *******************************************************************************/
 package org.openhealthtools.mdht.cda.processor;
@@ -18,29 +18,29 @@ import java.util.Comparator;
 import java.util.HashMap;
 
 import org.eclipse.emf.ecore.EClass;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
 
 /**
- * 
- * 
- * 
+ *
+ *
+ *
  * CDADocumentEventRegistry maintains a collection of cda document event
- * 
+ *
  * handlers and will execute all of the handlers defined for the cda
- * 
+ *
  * dependencies
- * 
- * 
- * 
+ *
+ *
+ *
  * @author Sean Muir
- * 
- * 
+ *
+ *
  */
 
 public class CDADocumentEventRegistry {
 
-	private static class CDADocumentEventProcessorComparator implements
-			Comparator<CDADocumentEventProcessor<? extends ClinicalDocument>> {
+	private static class CDADocumentEventProcessorComparator
+			implements Comparator<CDADocumentEventProcessor<? extends ClinicalDocument>> {
 
 		public int compare(CDADocumentEventProcessor<? extends ClinicalDocument> cdaDocumentEventProcessor0,
 				CDADocumentEventProcessor<? extends ClinicalDocument> cdaDocumentEventProcessor1) {

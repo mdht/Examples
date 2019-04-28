@@ -3,4 +3,4 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Example
 Bundle-SymbolicName: org.openhealthtools.mdht.cda.example
 Bundle-Version: 0.5.0.qualifier
-Require-Bundle: org.openhealthtools.mdht.uml.cda
+Require-Bundle: org.eclipse.mdht.uml.cda

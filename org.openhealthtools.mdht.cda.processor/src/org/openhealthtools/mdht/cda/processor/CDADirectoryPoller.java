@@ -22,14 +22,14 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import org.eclipse.emf.common.util.Diagnostic;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.util.BasicValidationHandler;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeSummary;
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.util.BasicValidationHandler;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * CDADirectoryPoller Sample directory poller application using the processor to

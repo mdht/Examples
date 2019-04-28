@@ -11,25 +11,24 @@
 package org.openhealthtools.mdht.cda.example;
 import java.io.FileInputStream;
 
-import org.eclipse.emf.common.util.Diagnostic;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Patient;
-import org.openhealthtools.mdht.uml.cda.PatientRole;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.RecordTarget;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TS;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.InfrastructureRootTypeId;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Patient;
+import org.eclipse.mdht.uml.cda.PatientRole;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.RecordTarget;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
+import org.eclipse.mdht.uml.cda.util.ValidationResult;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.PN;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
+import org.eclipse.mdht.uml.hl7.datatypes.TS;
 
 public class Examples {
 
@@ -131,10 +130,10 @@ public class Examples {
 		ClinicalDocument clinicalDocument = CDAUtil.load(new FileInputStream("samples/SampleCDADocumentWithErrors.xml"), result);
 
 		System.out.println("\n***** Sample validation results *****");
-		for (Diagnostic diagnostic : result.getErrorDiagnostics()) {
+		for (org.eclipse.emf.common.util.Diagnostic diagnostic : result.getErrorDiagnostics()) {
 			System.out.println("ERROR: " + diagnostic.getMessage());
 		}
-		for (Diagnostic diagnostic : result.getWarningDiagnostics()) {
+		for (org.eclipse.emf.common.util.Diagnostic diagnostic : result.getWarningDiagnostics()) {
 			System.out.println("WARNING: " + diagnostic.getMessage());
 		}
 

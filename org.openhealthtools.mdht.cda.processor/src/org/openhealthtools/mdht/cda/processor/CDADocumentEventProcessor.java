@@ -12,7 +12,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.cda.processor;
 
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
 
 /**
  * CDADocumentEventProcessor Definition of method used by Event registry to
