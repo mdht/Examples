@@ -1,0 +1,1 @@
+This Eclipse Java Project uses the Consol Jars to consume, create, and validate various CDA documents defined in the HITSP specification.
